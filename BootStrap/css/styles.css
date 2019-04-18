@@ -160,7 +160,9 @@ p {
     text-align: center;
   }
   .title-image {
-    position: static;
-    transform: rotate(0);
+    width:100%;
+    transform: rotate(-5deg);
+    position:absolute;
+    right: 5%;
   }
 }
