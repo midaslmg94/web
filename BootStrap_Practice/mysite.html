@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중간고사 BootStrap 연습페이지</title>
+
+  <!-- 페이지 전체의 폰트 삽입 : google fonts에서 가져옴-->
+  <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- BootStrap을 사용하기 위해 링크삽입  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--css 스타일시트 사용-->
+  <link rel="stylesheet" href="css/mystyle.css">
+
+  <!--fontawesome 페이지에서 애플, 안드로이드 등 아이콘 가져오기-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <section id="title">
+    <!--Navbar는 body의 맨 윗부분에서 사용한다.
+      또한 Navbar는 container와 함께 자주 사용된다-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!--.navbar-brand for your company, product, or project name.-->
+        <a class="navbar-brand" href="">Minki</a>
+        <!--.collapse.navbar-collapse 햄버거 메뉴바 만들기-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- navbar-toggler-icon : 햄버거 메뉴바 아이콘 -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 햄버거 메뉴바 누르면 밑에 메뉴 항목 나오기
+        id = navbarNavDropdwon : 드롭다운으로 메뉴항목 표시-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <!-- 앞글자
+               m : for classes that set margin
+               p : for classes that set padding
+               뒷글자
+               t : top, b:bottom, l:left, r:Copyright
+              마지막 글자 : auto : 자동으로 마진 설정-->
+          <ul class="navbar-nav ml-auto">
+            <!--각각 li에 담아줘야 가로로 출력이 된다. 하나의 li에 담으면 세로로 출력 -->
+            <li class="navbar-item">
+              <a class="nav-link" href="#footer">Go to footer</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#pricing">Go to price</a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link" href="#cta">Go to download</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="navbar-header">
+            <h1>푸르다고 <br />그저 바라만 보고 있을 수 없다.</h1>
+            <h1>높고 맑게 탈각한 흔적이 <br>저기 있다.</h1>
+            <!-- 애플, 구글 플레이리스트 Download 아이콘-->
+            <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+            <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- alt는 src에 있는 이미지가 폴더내에 없거나 주소가 잘못되었을 때 나타내는 오류문구-->
+          <img class="title-image" src="images/dokdo02.jpg" alt="dokdo-blue">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <!-- i태그 : fontawesome에서 가져온 아이콘들 -->
+        <i class="icon fas fa-heart fa-4x"></i>
+        <!-- fa-4x란 이미지의 크기를 키운것이다. -->
+        <h3>맑다</h3>
+        <p>맑은 것이 하늘만은 아니다.<br>바다도 바다를 섬섬하게 품은 <br>그곳도.</p>
+        <p>이미지 크기 : fa-4x</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-3x"></i>
+        <h3>밝다</h3>
+        <p>곧게 저지른 존재감. <br> 해맑은 두 볼에 안긴 여운<br>그건 투명함.</p>
+        <p>이미지 크기 : fa-3x</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-2x"></i>
+        <h3>높다</h3>
+        <p>바다보다 낮고<br>하늘보다 높다.<br>버팀이란 숭숭한 자유로움</p>
+        <p>이미지 크기 : fa-2x</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <!-- 캐러셀 속도 조절하기 data-interval = "time" -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="500">
+      <div class="carousel-inner">
+        <!-- 맨 처음엔 active를 넣어줘야 캐러셀이 생성된다  -->
+        <div class="carousel-item active">
+          <!-- img class = "testimonial-image"를 넣어줘야 사진이 작게 변함  -->
+          <h2> 난 갈망하지 않는다. 바다의 끝도 하늘의 시작도<br>내가 찾은 곳은 이미 탈각의 끝이며, <br />기억이 시작이다.</h2>
+          <img class="testimonial-image" src="images/dokdo02.jpg" alt="dokdo-profile">
+          <em>울릉읍, 경상북도</em>
+        </div>
+
+        <div class="carousel-item">
+          <h2> 캐러셀 연습중 <br> 캐러셀 속도는 조절 못하나 <br> 캐러셀 속도 느리다</h2>
+          <img class="testimonial-image" src="images/dokdo.jpg" alt="Second slide">
+        </div>
+
+        <div class="carousel-item">
+          <h2> 배고프다 <br> 핫도그 먹을까 <br> 무슨맛으로 먹을까</h2>
+          <img class="testimonial-image" src="images/iphone6.png" alt="Third slide">
+        </div>
+
+        <div class="carousel-item">
+          <h2> 캐러셀까지만 <br> 캐러셀만 완료하자 <br> 집에가자 </h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="Forth slide">
+        </div>
+      </div>
+
+
+
+      <!-- 캐러셀 앞 뒤로 넘기는 부분 크게 건드리지 않아도 될 듯 -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Press -->
+
+  <section id="press">
+    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>독도를 찾는 분들에게</h2>
+    <p>독도 경로와 비용을 제안합니다.</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>해안선 경로</h3>
+          </div>
+          <div class="card-body">
+            <h2>무료</h2>
+            <p>해안선 1코스</p>
+            <p>해안선 2코스</p>
+            <p>해안선 3코스</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button">Sign Up</button>
+
+
+    <h3>능선 경로</h3>
+    <h2>5만원 / 1인</h2>
+    <p>능선 1코스</p>
+    <p>능선 2코스</p>
+    <p>능선 3코스</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>탐사 경로</h3>
+    <h2>12만원 / 1인</h2>
+    <p>탐사 1코스</p>
+    <p>탐사 2코스</p>
+    <p>탐사 3코스</p>
+    <p>탐사 4코스</p>
+    <button type="button">Sign Up</button>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>독도 경관과 경로 자료를 준비했습니다.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright 2019 Hyunjong</p>
+
+  </footer>
+
+
+</body>
+
+</html>

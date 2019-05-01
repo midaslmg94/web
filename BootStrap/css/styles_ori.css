@@ -12,7 +12,7 @@ body {
 h1 {
   font-family: "dokdo";
   /* font-family: 'Ubuntu'; */
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height:1.5;
 }
 
@@ -57,7 +57,7 @@ p {
 /* title images */
 
 .title-image {
-  width:100%;
+  width:60%;
   transform: rotate(-5deg);
   position:absolute;
   right: 5%;
