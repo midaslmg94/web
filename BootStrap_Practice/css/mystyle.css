@@ -11,7 +11,7 @@ body{
   padding: 0 0 4.5rem;
 }
 .navbar-brand {
-  font-family: "East Sea Dokdo";
+  font-family: "Sunflower";
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -21,7 +21,7 @@ body{
 /* 햄버거 바의 메뉴 글씨 설정*/
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Ubuntu"
+  font-family: "Do Hyeon"
 }
 
 
@@ -33,7 +33,7 @@ body{
    font-size : rem은 상대적 크기를 나타냄
    line-height : 줄 간격(1.5 = 150%)*/
 h1 {
-  font-family: "East Sea Dokdo";
+  font-family: "Sunflower";
   font-size: 3rem;
   line-height:1.5;
 }
@@ -44,11 +44,11 @@ h2 {
 }
 h3 {
   font-size: 2rem;
-  font-family: "East Sea Dokdo";
+  font-family: "Ubuntu";
 
 }
 p {
-  font-family: "Ubuntu";
+  font-family: "Do Hyeon";
   color:purple;
 }
 
@@ -96,6 +96,7 @@ p {
   margin: 20px 10px;
 }
 
+/* 조그맣게 동그랗게 나오는 사진*/
 .testimonial-image {
   width:10%;
   border-radius: 100%;
